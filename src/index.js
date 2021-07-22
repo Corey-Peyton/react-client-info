@@ -179,6 +179,20 @@ function CreateCard() {
 
   return (
     <Card className={classes.card}>
+      <CardHeader
+        avatar={
+          <Avatar aria-label="recipe" className={classes.avatar}>
+            C
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }
+        title="Client Information"
+        subheader={dateTime}
+      />
       <CardActions disableSpacing>
         <IconButton
           className={clsx(classes.expand, {
